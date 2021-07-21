@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navTop {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.displaySocial {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    list-style: none;
+    margin-left: 0.5rem;
+}
+.displayIcons {
+    margin-right: 1rem;
+    margin-left: 0.2rem
+}
+
+.socialIcons {
+    margin-right: 1rem;
+}
+
+.adminLink {
+    font-size: 1rem;
+    padding-bottom: 0.7rem;
+    color: blanchedalmond;
+    margin-top: 0.7rem;
+    text-align: right;
+    margin-right: 0.3rem;
+}
+
+.displayLinks {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none;
+}
+.links {
+    color: black;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    padding-bottom: 1rem;
+    margin-top: 0.8rem;
+}
+
+.active {
+    color : #DB7277;
+}
+
+
+@media (max-width : 700px) {
+    .navContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    position: fixed;
+    bottom: 0px;
+    top: initial;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0px;
+}
+    .displayLinks {
+        border-top: solid 1px black;
+        justify-content: center;
+
+    }
+
+}
+
+@media (min-width : 700px) {
+    .navTop {
+        position: fixed;
+        bottom: 0px;
+        top: initial;
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        padding-bottom: 0px;
+    }
+    .navBar {
+        position: sticky;
+    }
+}
