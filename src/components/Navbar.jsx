@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, BrowserRouter as Router } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../css/Navbar.css';
 
 function Navbar() {
@@ -11,17 +11,15 @@ function Navbar() {
             <li className="socialIcons">LinkedIn</li>
             <li className="socialIcons">Twitter</li>
         </ul>
-        <p className="adminLink">Admin</p>
+        <NavLink type="button" activeClassName="active" className="adminLink" exact to="/login">Admin</NavLink>
     </div>
     <nav className="navBar">
-        <Router>
         <ul className="displayLinks">
-           <li className="links"><NavLink activeClassName="active" to='/'>Home</NavLink></li>
-            <li className="links">Projects</li>
-            <li className="links">About me</li>
-            <li className="links">Contact</li>
+        <NavLink type="button" activeClassName="active" className="links" exact to="/"><li className="links">Home</li></NavLink>
+        <NavLink type="button" activeClassName="active" className="links" exact to="/"><li className="links">Projects</li></NavLink>
+        <NavLink type="button" activeClassName="active" className="links" exact to="/"><li className="links">About me</li></NavLink>
+        <NavLink type="button" activeClassName="active" className="links" exact to="/"><li className="links">Contact</li></NavLink>
         </ul>
-        </Router>
     </nav>
 </div>
   );
