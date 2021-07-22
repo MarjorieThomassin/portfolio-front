@@ -4,6 +4,8 @@ import './App.css';
 import Navbar from './components/Navbar.jsx';
 import Home from './components/Home.jsx';
 import Login from './components/Login.jsx';
+import Projects from './components/Projects.jsx';
+import Contact from './components/Contact.jsx';
 import Admin from './components/Admin.jsx';
 import { LoginRequestProvider } from './context/loginContext';
 
@@ -22,6 +24,12 @@ function App() {
     </Route>
     <Route className="route" exact path="/admin">
       <Admin />
+    </Route>
+    <Route className="route" exact path="/projects">
+      <Projects />
+    </Route>
+    <Route className="route" exact path="/contact">
+      <Contact />
     </Route>
     </Switch>
         </BrowserRouter>

@@ -3,39 +3,111 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .avatar {
-    max-width: 30%;
+    align-self: center;
+    max-width: 40%;
     max-height: auto;
-    border-radius: 30%;
+    border-radius: 50%;
     margin-top: 1rem;
-    margin-left: 1rem;
-    padding-bottom: 1rem;
+
 }
 
 .infoProfile {
     list-style: none;
     margin-top: 1rem;
-    margin-right: 3rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 1.4rem;
 }
 
 .infoList {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+
+}
+
+.secondHomeContainer {
+    margin: 3rem;
+}
+
+.wordColor {
+    color: #DB7277;
+}
+.descriptionParagraph {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.linkParagraph {
+    color: #c0621a;
+}
+
+.linkParagraph:hover{
+    color:#79363a
+}
+
+.displaySoftSkills {
+    list-style: none;
+}
+
+.titleSkills {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.softSkills {
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+    color: #DB7277;
 }
 
 @media (min-width : 700px) {
     .avatar {
         max-width: 20%;
         border-radius: 50%;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .firstHomeContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .infoProfile {
+        list-style: none;
+        margin-top: 1rem;
+        margin-right: 3rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
     .infoList {
-    font-size: 3rem;
+        font-size: 3rem;
+        }
+    .secondHomeContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+}
+    .descriptionParagraph {
+        font-size: 1.9rem;
+        max-width: 50%;
+        margin: 2rem;
+    }
+    .displaySoftSkills {
+        min-width: 50%;
+    }
+    .titleSkills {
+        font-size: 2.2rem;
+    }
+    .softSkills {
+        font-size: 2rem;
     }
 }

@@ -17,23 +17,15 @@
 }
 
 .displaySocial {
-    font-size: 1rem;
-    color: #ffffff;
-    margin-bottom: 0.7rem;
-    margin-top: 0.7rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.4rem;
     display: flex;
     flex-direction: row;
     justify-content: left;
-    list-style: none;
-    margin-left: 0.5rem;
 }
 .displayIcons {
-    margin-right: 1rem;
-    margin-left: 0.2rem
-}
+    margin-right: 10rem;
 
-.socialIcons {
-    margin-right: 1rem;
 }
 
 .adminLink {
@@ -54,16 +46,22 @@
     list-style: none;
 }
 .links {
-    color: black;
+    color: rgb(0, 0, 0);
     margin-left: 1rem;
     margin-right: 0.5rem;
     padding-bottom: 0.8rem;
     margin-top: 0.4rem;
+    text-decoration: none;
+}
+
+.links:hover {
+    color:#DB7277;
 }
 
 .active {
     color : #DB7277;
 }
+
 
 
 @media (max-width : 700px) {
@@ -83,6 +81,21 @@
         justify-content: center;
 
     }
+    .iconLink {
+        max-width: 20%;
+    }
+    .github {
+        max-width: 30%;
+        padding-top: 0.5em;
+    }
+    .linkedin {
+        max-width: 53%;
+    }
+    .twitter {
+        max-width: 30%;
+        padding-top: 0.4rem;
+    }
+
 
 }
 
@@ -97,4 +110,24 @@
         padding-bottom: 0px;
     }
 
+    .adminLink {
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+    .iconLink {
+        max-width: 10%;
+    }
+    .github {
+        max-width: 15%;
+        padding-top: 0.6rem;
+    }
+    .linkedin {
+        max-width: 25%;
+    }
+    .twitter {
+        max-width: 18%;
+        padding-top: 0.2rem;
+    }
+
+    
 }
