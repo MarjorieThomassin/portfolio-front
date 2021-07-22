@@ -1,5 +1,4 @@
 .adminFormContainer {
-    content: '';
     background: url("../assets/keyboard.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -9,31 +8,20 @@
     height: 100%;
     top: 0;
     bottom: 0;
-    margin-top: 4rem;
     position: absolute;
 }
 
 .loginForm {
     background-color: rgba(255, 255, 255, 0.678);
     margin-top: 4rem; 
-    max-width: 25%;
-    min-height: 25%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     text-align: center;
     margin-left: auto;
     margin-right:auto;
-    /* box-shadow:
-    0 0 8px #000000,
-    inset 0 0 8px #000000,
-    0 0 16px #000000,
-    inset 0 0 16px #000000,
-    0 0 32px #EB5757,
-    inset 0 0 32px #EB5757;  */
     border: solid 4px #000000;
     border-radius: 5%;
-    padding: 1rem;
 }
 
 .loginButton {
@@ -72,4 +60,27 @@
     display: flex;
     justify-content: space-between;
     margin:auto;
+}
+
+.loginButton {
+    margin: 0.3rem;
+}
+
+@media (min-width: 700px) {
+    .adminFormContainer {
+        padding-top: 4rem;
+        margin-top: 4rem;
+    }
+    .loginForm {
+        max-width: 25%;
+        min-height: 25%;
+        padding: 1rem;
+}
+}
+
+@media (max-width: 700px) {
+    .loginForm {
+        margin-top: 12rem;
+        width: 80%;
+    }
 }
