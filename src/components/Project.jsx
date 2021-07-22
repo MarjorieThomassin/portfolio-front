@@ -5,22 +5,10 @@ function Project({ project }) {
   return (
     <div className="projectList">
       <p className="projectDescription">
-        {/* <div className="bottleimg">
-          <img className="imgbottle"
-          src={`${process.env.REACT_APP_API_URL}/uploads/${bottle.frontImg}`}
-          alt={`${bottle.id}recto`} />
-          <img className="imgbottle"
-          src={`${process.env.REACT_APP_API_URL}/uploads/${bottle.backImg}`}
-          alt={`${bottle.id}verso`} />
-        </div> */}
         <span className="descritpionProject">Name :</span>
         {' '}
         {project.nameProject}
         <br />
-        {/* <span className="descriptionProject">image :</span>
-        {' '}
-        {project.image}
-        <br /> */}
         <span className="descriptionProject">Du :</span>
         {' '}
         {project.startedAt}
