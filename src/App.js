@@ -8,11 +8,13 @@ import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
 import Admin from './components/Admin.jsx';
 import { LoginRequestProvider } from './context/loginContext';
+import { ProjectProvider } from './context/ProjectContext';
 
 function App() {
   return (
     <div className="App">
       <LoginRequestProvider>
+        <ProjectProvider>
         <BrowserRouter>
         <Navbar />
         <Switch>
@@ -33,6 +35,7 @@ function App() {
     </Route>
     </Switch>
         </BrowserRouter>
+        </ProjectProvider>
       </LoginRequestProvider>
     </div>
   );

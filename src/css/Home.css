@@ -67,7 +67,7 @@
     color: #DB7277;
 }
 
-@media (min-width : 700px) {
+@media (min-width : 830px) {
     .avatar {
         max-width: 20%;
         border-radius: 50%;

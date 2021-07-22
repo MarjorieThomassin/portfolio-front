@@ -64,7 +64,7 @@
 
 
 
-@media (max-width : 700px) {
+@media (max-width : 830px) {
     .navContainer {
     display: flex;
     flex-direction: column-reverse;
@@ -99,7 +99,7 @@
 
 }
 
-@media (min-width : 700px) {
+@media (min-width : 830px) {
     .navTop {
         position: fixed;
         bottom: 0px;

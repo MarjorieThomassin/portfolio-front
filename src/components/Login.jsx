@@ -39,10 +39,10 @@ function Login() {
         className="loginForm"
       >
         <label className="loginEmail" htmlFor="email">
-          <input className="inputLogin" ref={emailInput} type="email" id="email" placeholder="your email or username" required />
+          <input className="input" ref={emailInput} type="email" id="email" placeholder="your email or username" required />
         </label>
         <label className="loginPassword" htmlFor="password" id="password">
-          <input className="inputLogin" ref={passwordInput} type="password" placeholder="your password" required />
+          <input className="input" ref={passwordInput} type="password" placeholder="your password" required />
         </label>
         <div className="btnLogin">
         <button
@@ -50,12 +50,12 @@ function Login() {
             value="submit"
             type="submit"
           >
-            Valider
+            Submit
           </button>
           <button className="loginButton" type="submit" onClick={() => setIsClicked(true)}>
             {isClicked
              && <Redirect to="/" />}
-            Retour
+            Back
           </button>
         </div>
       </form>
