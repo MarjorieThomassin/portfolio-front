@@ -12,6 +12,7 @@ function Home() {
             <ul className="infoProfile">
                 <li className="infoList">Marjorie Thomassin</li>
                 <li className="infoList">Web developer</li>
+                <li className="infoList">Hello World!</li>
             </ul>
         </div>
         <div className="secondHomeContainer">
